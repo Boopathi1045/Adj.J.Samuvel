@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MILESTONES } from '../constants';
-import ProfileImg from '../assets/profile.jpeg';
+import ProfileImg from '../assets/Profile.jpeg';
 
 interface AchievementsViewProps {
   profileImageUrl: string;

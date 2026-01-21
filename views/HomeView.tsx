@@ -2,7 +2,7 @@
 import React from 'react';
 import { PRACTICE_AREAS } from '../constants';
 import { Link } from 'react-router-dom';
-import ProfileImg from '../assets/profile.jpeg';
+import ProfileImg from '../assets/Profile.jpeg';
 
 interface HomeViewProps {
   profileImageUrl: string;
