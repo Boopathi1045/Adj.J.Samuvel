@@ -1,0 +1,7 @@
+{
+  "name": "Adv. J. Samuvel Legal Portfolio",
+  "description": "Professional legal portfolio for Adv. J. Samuvel, featuring legal insights, achievements, and consultation services in Theni and surrounding regions.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

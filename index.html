@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adv. J. Samuvel | Legal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&family=Noto+Sans:wght@400;500;700&family=Public+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#3a5a4c",
+              "accent-brass": "#C2B280",
+              "background-light": "#fbf8f4",
+              "background-dark": "#1a1f1d",
+              "card-border": "#d1d5db",
+            },
+            fontFamily: {
+              "display": ["Noto Serif", "serif"],
+              "sans": ["Noto Sans", "sans-serif"],
+              "public": ["Public Sans", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.125rem",
+              "lg": "0.25rem",
+              "xl": "0.5rem",
+              "full": "0.75rem"
+            },
+          },
+        },
+      }
+    </script>
+    <style type="text/tailwindcss">
+      @layer base {
+        body {
+          @apply bg-background-light dark:bg-background-dark text-[#131615] dark:text-[#ecefed] transition-colors duration-300;
+          font-family: 'Noto Sans', sans-serif;
+        }
+        h1, h2, h3, .font-display {
+          font-family: 'Noto Serif', serif;
+        }
+      }
+      .hero-overlay {
+        background: linear-gradient(to right, rgba(251, 248, 244, 0.95) 0%, rgba(251, 248, 244, 0.8) 50%, rgba(251, 248, 244, 0.4) 100%);
+      }
+      .dark .hero-overlay {
+        background: linear-gradient(to right, rgba(26, 31, 29, 0.95) 0%, rgba(26, 31, 29, 0.8) 50%, rgba(26, 31, 29, 0.4) 100%);
+      }
+      .timeline-line::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1px;
+        height: 100%;
+        background-color: #3a5a4c;
+        opacity: 0.2;
+        z-index: 0;
+      }
+      @media (max-width: 768px) {
+        .timeline-line::before {
+          left: 20px;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.39.7"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
